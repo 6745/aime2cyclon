@@ -167,7 +167,7 @@ class AimeTest:
                 card_id_str = card_id_str[:20]  # Truncate to 20 characters
 
             # Save card ID to config
-            self.save_card_to_config(card_id_str)
+            self.save_card_to_config(card_id_str.upper())
 
             print(f"Card Found! Card ID: {card_id_str}")
             self.send_led(0, 0, 0xff)
